@@ -13,18 +13,18 @@ class TitleView: UIView {
         let label: UILabel = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 50, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 45, weight: .bold)
         label.adjustsFontSizeToFitWidth = true
-        label.text = "CALCULATE YOUR BMI"
+        label.text = Datasource.Texts.titleText
         label.textAlignment = .left
-        label.textColor = UIColor.gray
+        label.numberOfLines = 2
+        label.textColor = Datasource.Colors.titleColor
         return label
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.layout()
-        self.backgroundColor = .red
     }
     
     required init?(coder: NSCoder) {
@@ -36,7 +36,8 @@ class TitleView: UIView {
         self.addSubview(self.title)
         NSLayoutConstraint.activate([
             self.title.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            self.title.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            self.title.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            self.title.centerYAnchor.constraint(equalTo: self.centerYAnchor)
         ])
         
     }

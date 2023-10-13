@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B344CE912AD993760042DA73 /* WeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344CE902AD993760042DA73 /* WeightView.swift */; };
 		B38F535D2AD67C3D00BCA81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F535C2AD67C3D00BCA81F /* AppDelegate.swift */; };
 		B38F535F2AD67C3D00BCA81F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F535E2AD67C3D00BCA81F /* SceneDelegate.swift */; };
 		B38F53612AD67C3D00BCA81F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F53602AD67C3D00BCA81F /* ViewController.swift */; };
@@ -16,9 +17,11 @@
 		B3AAF9762AD6D793005F2BAE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAF9752AD6D793005F2BAE /* CustomButton.swift */; };
 		B3AAF9792AD6D820005F2BAE /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAF9782AD6D820005F2BAE /* Datasource.swift */; };
 		B3AAF97B2AD6F0D0005F2BAE /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAF97A2AD6F0D0005F2BAE /* TitleView.swift */; };
+		B3C797CF2AD85F2D00570F03 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C797CE2AD85F2D00570F03 /* HeightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B344CE902AD993760042DA73 /* WeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightView.swift; sourceTree = "<group>"; };
 		B38F53592AD67C3D00BCA81F /* BMI Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BMI Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38F535C2AD67C3D00BCA81F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B38F535E2AD67C3D00BCA81F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		B3AAF9752AD6D793005F2BAE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B3AAF9782AD6D820005F2BAE /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
 		B3AAF97A2AD6F0D0005F2BAE /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		B3C797CE2AD85F2D00570F03 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				B3AAF9752AD6D793005F2BAE /* CustomButton.swift */,
 				B3AAF97A2AD6F0D0005F2BAE /* TitleView.swift */,
+				B3C797CE2AD85F2D00570F03 /* HeightView.swift */,
+				B344CE902AD993760042DA73 /* WeightView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,7 +190,9 @@
 				B3AAF97B2AD6F0D0005F2BAE /* TitleView.swift in Sources */,
 				B38F535F2AD67C3D00BCA81F /* SceneDelegate.swift in Sources */,
 				B38F53742AD67FF000BCA81F /* ResultViewController.swift in Sources */,
+				B344CE912AD993760042DA73 /* WeightView.swift in Sources */,
 				B3AAF9762AD6D793005F2BAE /* CustomButton.swift in Sources */,
+				B3C797CF2AD85F2D00570F03 /* HeightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
