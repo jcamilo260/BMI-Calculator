@@ -30,7 +30,7 @@ struct Calculator{
         if calcualtion < Datasource.ClasificationData.skinnyBound{
             self.bmi = BMI(value: calcualtion, advice: Datasource.Texts.skinnyAdvice, color: Datasource.Colors.skinnyScreenColor)
         }
-        if calcualtion >= Datasource.ClasificationData.skinnyBound && calcualtion < Datasource.ClasificationData.FatBound{
+        else if calcualtion >= Datasource.ClasificationData.skinnyBound && calcualtion < Datasource.ClasificationData.FatBound{
             self.bmi = BMI(value: calcualtion, advice: Datasource.Texts.fitAdvice, color: Datasource.Colors.healthyScreenColor)
         }else{
             self.bmi = BMI(value: calcualtion, advice: Datasource.Texts.fatAdvice, color: Datasource.Colors.fatScreenColor)
