@@ -25,7 +25,7 @@ class HeightView: UIView {
         let label: UILabel = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = Datasource.Colors.smallLabelColor
-        label.text = "1.5m"
+        label.text = "0m"
         label.numberOfLines = 1
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
@@ -38,7 +38,6 @@ class HeightView: UIView {
         slider.translatesAutoresizingMaskIntoConstraints = false
         slider.minimumValue = 1.4
         slider.maximumValue = 2.1
-        slider.value = 1.6
         slider.tintColor =  Datasource.Colors.sliderColor
         slider.thumbTintColor = Datasource.Colors.sliderColor
         return slider
@@ -70,6 +69,10 @@ class HeightView: UIView {
         return self.heightSlider
     }
     
+    public var _numberTitle: Float{
+        return Float(String(format: "%.2f", self.heightSlider.value)) ?? 0
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.layout()
@@ -82,6 +85,7 @@ class HeightView: UIView {
     
     private func layout(){
         self.setupVerticalStack()
+        self.numberTitle.text = "\(self.heightSlider.minimumValue)\(Datasource.Texts.heightPrefix)"
     }
     
     private func setupVerticalStack(){

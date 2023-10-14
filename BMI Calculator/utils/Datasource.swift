@@ -24,6 +24,16 @@ struct Datasource{
         public static let titleText: String = "CALCULATE YOUR BMI"
         public static let heightTitleText: String = "Height"
         public static let weightTitleText: String = "Weight"
+        public static let heightPrefix: String = "m"
+        public static let weightPrefix: String = "Kg"
         
+        public static let skinnyAdvice: String = "Eat more pies..."
+        public static let fitAdvice: String = "Heyy, good shape!"
+        public static let fatAdvice: String = "What are you eating? Elephants?"
+    }
+    
+    struct ClasificationData{
+        public static let skinnyBound: Float = 18.5
+        public static let FatBound: Float = 25
     }
 }

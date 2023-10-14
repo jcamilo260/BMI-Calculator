@@ -18,6 +18,8 @@
 		B3AAF9792AD6D820005F2BAE /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAF9782AD6D820005F2BAE /* Datasource.swift */; };
 		B3AAF97B2AD6F0D0005F2BAE /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAF97A2AD6F0D0005F2BAE /* TitleView.swift */; };
 		B3C797CF2AD85F2D00570F03 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C797CE2AD85F2D00570F03 /* HeightView.swift */; };
+		B3E584AF2AD9FDCF00FAEA17 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E584AE2AD9FDCF00FAEA17 /* BMI.swift */; };
+		B3E584B12AD9FFB200FAEA17 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E584B02AD9FFB200FAEA17 /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B3AAF9782AD6D820005F2BAE /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
 		B3AAF97A2AD6F0D0005F2BAE /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		B3C797CE2AD85F2D00570F03 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
+		B3E584AE2AD9FDCF00FAEA17 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		B3E584B02AD9FFB200FAEA17 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 		B38F53722AD67FD300BCA81F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B3E584AE2AD9FDCF00FAEA17 /* BMI.swift */,
+				B3E584B02AD9FFB200FAEA17 /* Calculator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E584AF2AD9FDCF00FAEA17 /* BMI.swift in Sources */,
 				B3AAF9792AD6D820005F2BAE /* Datasource.swift in Sources */,
 				B38F53612AD67C3D00BCA81F /* ViewController.swift in Sources */,
+				B3E584B12AD9FFB200FAEA17 /* Calculator.swift in Sources */,
 				B38F535D2AD67C3D00BCA81F /* AppDelegate.swift in Sources */,
 				B3AAF97B2AD6F0D0005F2BAE /* TitleView.swift in Sources */,
 				B38F535F2AD67C3D00BCA81F /* SceneDelegate.swift in Sources */,

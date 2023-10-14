@@ -26,7 +26,6 @@ class WeightView: UIView{
         let label: UILabel = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = Datasource.Colors.smallLabelColor
-        label.text = "40Kg"
         label.numberOfLines = 1
         label.textAlignment = .center
         label.adjustsFontSizeToFitWidth = true
@@ -71,6 +70,10 @@ class WeightView: UIView{
         return self.weightSlider
     }
     
+    public var _numberTitle: Float{
+        return Float(String(format: "%.0f", self.weightSlider.value)) ?? 0
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.layout()
@@ -83,6 +86,7 @@ class WeightView: UIView{
     
     private func layout(){
         self.setupVerticalStack()
+        self.numberTitle.text = "\(String(format: "%.0f", self.weightSlider.minimumValue))\(Datasource.Texts.weightPrefix)"
     }
     
     private func setupVerticalStack(){

@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     private let titleView: TitleView = TitleView()
     private let heightView: HeightView = HeightView()
     private let weightView: WeightView = WeightView()
+    private lazy var calculator: Calculator = Calculator()
 
     private let button: CustomButton = CustomButton()
     private lazy var vStack: UIStackView = {
@@ -117,6 +118,17 @@ class ViewController: UIViewController {
     
     @objc private func performButtonAction(sender: CustomButton){
         sender.shake()
+        
+        let heightValue: Float? = Float(self.heightView._numberTitle)
+        let weightValue: Float? = Float(self.weightView._numberTitle)
+        
+        if let heightValue = heightValue,
+           let weightValue = weightValue{
+            print(self.calculator.calculate(height: heightValue, weight: weightValue))
+        }else{
+            print("Something with the values has gone wrong")
+            return
+        }
     }
     
     @objc private func heightSliderChanged(_ sender: UISlider){
@@ -125,7 +137,6 @@ class ViewController: UIViewController {
     
     @objc private func weightSliderChanged(_ sender: UISlider){
         self.weightView.setNumberTitle(number: sender.value)
-        print(sender.value)
     }
 }
 
