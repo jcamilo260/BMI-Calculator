@@ -88,7 +88,6 @@ class ViewController: UIViewController {
     
     private func setupImage(){
         self.view.addSubview(self.backgroundImage)
-        
         self.backgroundImage.image = UIImage(named: "calculate_background")
         self.backgroundImage.contentMode = .scaleAspectFit
         self.backgroundImage.translatesAutoresizingMaskIntoConstraints = false
@@ -124,7 +123,13 @@ class ViewController: UIViewController {
         
         if let heightValue = heightValue,
            let weightValue = weightValue{
-            print(self.calculator.calculate(height: heightValue, weight: weightValue))
+            let bmi: BMI = self.calculator.calculate(height: heightValue, weight: weightValue)
+            let resultView: ResultViewController = ResultViewController()
+            resultView.setAdvice(advice: bmi.advice)
+            resultView.setResult(result: String(bmi.value))
+            resultView.setBackgroundColor(color: bmi.color)
+            resultView.modalTransitionStyle = .flipHorizontal
+            self.present(resultView, animated: true)
         }else{
             print("Something with the values has gone wrong")
             return

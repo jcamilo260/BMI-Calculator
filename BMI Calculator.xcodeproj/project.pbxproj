@@ -20,6 +20,7 @@
 		B3C797CF2AD85F2D00570F03 /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C797CE2AD85F2D00570F03 /* HeightView.swift */; };
 		B3E584AF2AD9FDCF00FAEA17 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E584AE2AD9FDCF00FAEA17 /* BMI.swift */; };
 		B3E584B12AD9FFB200FAEA17 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E584B02AD9FFB200FAEA17 /* Calculator.swift */; };
+		B3E584B42ADB07D900FAEA17 /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E584B32ADB07D900FAEA17 /* LabelFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		B3C797CE2AD85F2D00570F03 /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		B3E584AE2AD9FDCF00FAEA17 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		B3E584B02AD9FFB200FAEA17 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		B3E584B32ADB07D900FAEA17 /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		B38F535B2AD67C3D00BCA81F /* BMI Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				B3E584B22ADB07C400FAEA17 /* factory */,
 				B3AAF9772AD6D80E005F2BAE /* utils */,
 				B38F53722AD67FD300BCA81F /* Model */,
 				B38F53712AD67FCD00BCA81F /* Controller */,
@@ -118,6 +121,14 @@
 				B3AAF9782AD6D820005F2BAE /* Datasource.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		B3E584B22ADB07C400FAEA17 /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				B3E584B32ADB07D900FAEA17 /* LabelFactory.swift */,
+			);
+			path = factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 				B38F535F2AD67C3D00BCA81F /* SceneDelegate.swift in Sources */,
 				B38F53742AD67FF000BCA81F /* ResultViewController.swift in Sources */,
 				B344CE912AD993760042DA73 /* WeightView.swift in Sources */,
+				B3E584B42ADB07D900FAEA17 /* LabelFactory.swift in Sources */,
 				B3AAF9762AD6D793005F2BAE /* CustomButton.swift in Sources */,
 				B3C797CF2AD85F2D00570F03 /* HeightView.swift in Sources */,
 			);

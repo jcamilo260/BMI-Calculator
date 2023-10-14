@@ -30,6 +30,7 @@ struct Datasource{
         public static let skinnyAdvice: String = "Eat more pies..."
         public static let fitAdvice: String = "Heyy, good shape!"
         public static let fatAdvice: String = "What are you eating? Elephants?"
+        public static let resultText: String = "YOUR RESULT"
     }
     
     struct ClasificationData{
